@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>767</width>
+    <height>543</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>651</width>
+      <height>431</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="downButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>460</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+border: 1px solid #058129;
+border-radius: 5px;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 #83D799, stop: 0.4 #279543,
+stop: 0.5 #21833D, stop: 1.0 #68C783);
+color:#FFFFFF;
+font: bold;
+}
+
+QPushButton:hover{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 #8BE1A1, stop: 0.4 #2EAA4D,
+stop: 0.5 #018E29, stop: 1.0 #2DC95A);
+}
+
+QPushButton:hover:pressed {
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 #5BB473, stop: 0.4 #1A8235,
+stop: 0.5 #007120, stop: 1.0 #15A63F);
+}</string>
+    </property>
+    <property name="text">
+     <string>down</string>
+    </property>
+    <property name="autoRepeat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="upButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>460</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+border: 1px solid #058129;
+border-radius: 5px;
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 #83D799, stop: 0.4 #279543,
+stop: 0.5 #21833D, stop: 1.0 #68C783);
+color:#FFFFFF;
+font: bold;
+}
+
+QPushButton:hover{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 #8BE1A1, stop: 0.4 #2EAA4D,
+stop: 0.5 #018E29, stop: 1.0 #2DC95A);
+}
+
+QPushButton:hover:pressed {
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 #5BB473, stop: 0.4 #1A8235,
+stop: 0.5 #007120, stop: 1.0 #15A63F);
+}</string>
+    </property>
+    <property name="text">
+     <string>up</string>
+    </property>
+    <property name="autoRepeat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>20</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QFrame, QLabel, QToolTip {
+     border: 2px solid green;
+     border-radius: 4px;
+     padding: 2px;
+     background-image: url(images/welcome.png);
+ }</string>
+    </property>
+    <property name="text">
+     <string>Radio of target</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxForTargetX">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>120</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>600</number>
+    </property>
+    <property name="value">
+     <number>500</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxForTargetY">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>170</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>500</number>
+    </property>
+    <property name="value">
+     <number>15</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>100</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QFrame, QLabel, QToolTip {
+     border: 2px solid green;
+     border-radius: 4px;
+     padding: 2px;
+     background-image: url(images/welcome.png);
+ }</string>
+    </property>
+    <property name="text">
+     <string>Target X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>150</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QFrame, QLabel, QToolTip {
+     border: 2px solid green;
+     border-radius: 4px;
+     padding: 2px;
+     background-image: url(images/welcome.png);
+ }</string>
+    </property>
+    <property name="text">
+     <string>Target Y</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="spinBoxForRad">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>40</y>
+      <width>62</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="minimum">
+     <double>10.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>300.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>100.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fireButton">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>460</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+border: 1px solid #931E07;
+border-radius: 5px;
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 #E6A497, stop: 0.4 #BF503B,
+stop: 0.5 #B2290E, stop: 1.0 #EC4829);
+color:#FFFFFF;
+}
+
+QPushButton:hover{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 #E7A497, stop: 0.4 #D83E1F,
+stop: 0.5 #C82F11, stop: 1.0 #F99260);}
+
+
+QPushButton:hover:pressed {
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 #E6A497, stop: 0.4 #AF4834,
+stop: 0.5 #9A240D, stop: 1.0 #E03E1E);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>FIRE!</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="newGameButton">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>460</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+border: 1px solid rgb(22,63,116);
+border-radius: 5px;
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 rgb(94,204,239), stop: 0.4 rgb(12,89,156),
+stop: 0.5 rgb(12,89,156), stop: 1.0 rgb(67,136,184));
+color:#FFFFFF;
+}
+
+QPushButton:hover:pressed {
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 rgb(64,174,209), stop: 0.4 rgb(2,79,146),
+stop: 0.5 rgb(2,79,146), stop: 1.0 rgb(47,116,164));
+}
+
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 rgb(84,194,229), stop: 0.4 rgb(22,99,166),
+stop: 0.5 rgb(22,99,166), stop: 1.0 rgb(107,176,224));
+}
+</string>
+    </property>
+    <property name="text">
+     <string>NewGame</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="powerScrollBar">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>250</y>
+      <width>16</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>230</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QFrame, QLabel, QToolTip {
+     border: 2px solid green;
+     border-radius: 4px;
+     padding: 2px;
+     background-image: url(images/welcome.png);
+ }</string>
+    </property>
+    <property name="text">
+     <string>Power</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>767</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
